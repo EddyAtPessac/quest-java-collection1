@@ -27,4 +27,10 @@ public class Hero {
     public void setAge(int age) {
         this.age = age;
     }
+
+    @Override
+    // Return a readable content of the  hero
+    public String toString () {
+        return (String.format ("%s: %d years old",getName(),getAge() ));
+    }
 }
